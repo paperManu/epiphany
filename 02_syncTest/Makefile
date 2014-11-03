@@ -6,7 +6,7 @@ ELDF := $(ESDK)/bsps/current/legacy.ldf
 CXX := g++
 CXXFLAGS := -std=c++11 -O2 -g0
 ECXX := e-g++
-ECXXFLAGS := -O2 -g0 -T $(ELDF)
+ECXXFLAGS := -O2 -g0 -std=c++11 -T $(ELDF)
 
 PROGRAMS := src/main src/e_main.srec
 
